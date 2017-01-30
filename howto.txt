@@ -1,0 +1,101 @@
+Git init
+Npm init -y
+Git add package.json or add .
+Git commit -m “inital commit”
+
+
+Bower init
+Git checkout -b develop
+git checkout -b 'feature/addserver'
+
+npm install lite-server --save-dev
+
+git add package.json
+git commit -m "add lite-server"
+
+Git checkout develop
+Git add .gitignore
+Git commit -m “added gitignore”
+
+Git checkout -b “feature/add bootstrap”
+Bower install --save bootstrap
+
+Git add bower.json
+Git commit -m “adding bootstrap”
+
+Git checkout develop
+
+Git merge ‘feature/addserver’
+Git merge feature/addbootstrap
+
+Git checkout master
+Git merge develop
+Git clean -f -d
+Git clean -f -d -x
+
+Npm install
+Bower install
+-----------------------------------------
+Create folder monday-2
+Git init
+Create .gitignore file
+node_modules/
+bower_components/
+
+npm-debug.log
+
+Git add .gitignore
+Git commit -m “intal commit”
+
+Git checkout -b develop
+Git checkout -b feature/addserver
+Npm install --save-dev lite-server
+Npm init -y
+Open package.json
+{
+  "name": "monday-2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+    "dependencies": {
+    
+  },
+  "devDependencies": {
+    "liteserver": "^0.3.0"
+  }
+}
+
+Git status
+Git add package.json
+Git commit -m “add lite server”
+  }
+}
+
+Git add .
+Git commit -m “message”
+Git checkout develop
+
+Git checkout -b feature/add bower
+Bower init
+Bower install --save bootstrap
+
+Git add bower.json
+Git commit -m “ added bower”
+
+Git checkout develop
+Git merge feature/addserver
+Git merge feature addbootstrap // depends on what you named it
+Git merge feature/addbower
+Git checkout master
+
+-----------------------------------------------------------------------------
+
+
+

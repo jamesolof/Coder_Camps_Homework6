@@ -1,0 +1,12 @@
+#excluding third party package folders
+
+node_modules/
+# bower_components/
+src/lib/
+
+# excluding log files
+*.log
+
+# exclude built javascript
+src/js/**/*.js
+src/js/**/*.js.map

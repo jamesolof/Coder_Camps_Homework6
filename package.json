@@ -1,0 +1,25 @@
+{
+  "name": "homework4",
+  "version": "1.0.0",
+  "description": "homework for coder camps",
+  "main": "index.js",
+  "scripts": {
+    "lite": "lite-server",
+    "tsc": "tsc",
+    "tsc:w": "tsc -w",
+    "start": "concurrently \"npm run lite\" \"npm run tsc:w\""
+  },
+  "keywords": [
+    "bootstrap",
+    "html",
+    "typescript"
+  ],
+  "author": "james olof",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jquery": "^2.0.39",
+    "@types/requirejs": "^2.1.28",
+    "concurrently": "^3.1.0",
+    "lite-server": "^2.2.2"
+  }
+}
