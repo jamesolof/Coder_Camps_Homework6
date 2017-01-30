@@ -24,6 +24,7 @@ function game() {
 function guessCheck(guessy) {
     let guess: string = guessy;
     let indexr: number = 0;
+    console.log(theWord);
 
     if ((wasGuessed.indexOf(guess) == -1) && guess.length == 1) {
         while (theWord.indexOf(guess, indexr) > -1) {
@@ -34,6 +35,8 @@ function guessCheck(guessy) {
         }
         if (theWord.indexOf(guess) == -1) {
             fails++;
+            console.log(`<img src="/img/hMan${fails}.png">`)
+            $('#theHanger').html(`<img src="/img/hMan${fails}.png">`)
         }
         if (fails < 6) {
             $('#gameDisplay').html(theAnswer.join(''))
