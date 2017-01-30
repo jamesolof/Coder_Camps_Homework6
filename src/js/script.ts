@@ -19,6 +19,8 @@ function game() {
         this.theAnswer.push('?', ' ');
         $('#gameDisplay').html(theAnswer.join(''));
     }
+    $('#theHanger').html(`<img src="/img/hMan${fails}.png">`)
+
 }
 
 function guessCheck(guessy) {
@@ -35,7 +37,6 @@ function guessCheck(guessy) {
         }
         if (theWord.indexOf(guess) == -1) {
             fails++;
-            console.log(`<img src="/img/hMan${fails}.png">`)
             $('#theHanger').html(`<img src="/img/hMan${fails}.png">`)
         }
         if (fails < 6) {
